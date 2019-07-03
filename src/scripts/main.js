@@ -1,32 +1,22 @@
-console.log("Your Webpack application is set up and ready to go. Please start writing code.")
+console.log(
+  "Your Webpack application is set up and ready to go. Please start writing code."
+);
 
-const tasks = 
-    {
-    id: 1,
-    user_id: 1,
-    name: "Thomas",
-    text: "First task",
-    due_date: "date"
-}
+const tasks = {
+  id: 1,
+  user_id: 1,
+  name: "Thomas",
+  text: "First task",
+  due_date: "date"
+};
 
-<button onclick="myFunction()"></button>
-
-<script>
-function myFunction() {
-  var x = document.createElement("INPUT");
-  x.setAttribute("type", "checkbox");
-  document.body.appendChild(x);
-}
-</script>
-
-
-let taskPage = document.querySelector("#taskContainer")
+let taskPage = document.querySelector("#taskContainer");
 
 function taskHTML(fakeName) {
-    console.log(fakeName)
-    console.log(fakeName.name)
+  console.log(fakeName);
+  console.log(fakeName.name);
 
-    return `
+  return `
     <div>
         <title>Tasks</title>
         <section>
@@ -38,12 +28,12 @@ function taskHTML(fakeName) {
             <button id="addTask">Add</button>
         </section>
     </div>
-        `
+        `;
 }
 
 function taskToDOM(passingTask) {
-    taskPage.innerHTML = ""
-    taskPage.innerHTML += taskHTML(passingTask)
+  taskPage.innerHTML = "";
+  taskPage.innerHTML += taskHTML(passingTask);
 }
 
-taskToDOM(tasks)  
+taskToDOM(tasks);
