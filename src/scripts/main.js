@@ -1,5 +1,16 @@
+import {messageToDOM} from "./MessageDOMComponent"
 import {bringModalForm, handleArtModal} from "./form.js";
+const messages =
+    {
+    id: 1,
+    user_id: 1,
+    name: "Sam",
+    text: "This is a message"
+}
 
+messageToDOM(messages)
+
+// //Sign Up Component
 let signUpComponent = `<fieldset>
     <label>Name</label>
     <input type="text"/>

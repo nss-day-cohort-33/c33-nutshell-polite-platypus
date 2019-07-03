@@ -64,6 +64,10 @@ body {
 }
 
 #logInContainer {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
+}
+
+.messageBox {
+    border: 1px solid black
 }
