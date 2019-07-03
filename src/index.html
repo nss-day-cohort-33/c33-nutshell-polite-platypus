@@ -1,21 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./styles/main.css">
-  <title>Sparkle Huggie Nutshell</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Sparkle Huggie Nutshell</title>
+  </head>
 
 <body>
     <header>Welcome to Nutshell</header>
 
-  <div id="loginContainer">
-  </div>
-  <div id="messageContainer"></div>
+    <div id="loginContainer"></div>
 
-  <article id="container"></article>
-</body>
+    <div id="messageContainer"></div>
+
+    <article id="container"></article>
+
+    <div id="loginContainer"></div>
+
+    <div class="bodyBlackout"></div>
+
+    <button type="button" class="modalBtn" data-modal-btn="one">
+      Create Article
+    </button>
+
+    <button type="button" class="modalBtn" data-modal-btn="two">
+      Create Event
+    </button>
+
+    <button type="button" class="modalBtn" data-modal-btn="three">
+      Create Message
+    </button>
+
+    <button type="button" class="modalBtn" data-modal-btn="four">
+      Create Task
+    </button>
+
+    <article id="container"></article>
+
+    <div class="modalForm column" data-formDes="one" id="articleModal">
+      <label>Title</label>
+      <input type="text" id="artTitle" />
+      <label>Synopsis</label>
+      <input type="text" id="artSynopsis" />
+      <label>Link</label>
+      <input type="text" id="artLink" />
+      <label>Date</label>
+      <input type="date" id="artDate" />
+      <button class="submitBtn">submit</button>
+    </div>
+
+    <div class="modalForm column" data-formDes="two" id="eventModal">
+      <label>Name</label>
+      <input type="text" id="eventName" />
+      <label>Location</label>
+      <input type="text" id="location" />
+      <label>Date</label>
+      <input type="date" id="eventDate" />
+      <button class="submitBtn">submit</button>
+    </div>
+
+    <div class="modalForm column" data-formDes="three" id="messageModal">
+      <label>Message</label>
+      <input type="text" id="message" />
+      <label>Date</label>
+      <input type="date" id="messageDate" />
+      <button class="submitBtn">submit</button>
+    </div>
+
+    <div class="modalForm column" data-formDes="four" id="taskModal">
+      <label>Task</label>
+      <input type="text" id="task" />
+      <label>Date</label>
+      <input type="date" id="taskDate" />
+      <button class="submitBtn">submit</button>
+    </div>
+  </body>
 </html>
