@@ -1,3 +1,15 @@
+import {messageToDOM} from "./MessageDOMComponent"
+
+const messages =
+    {
+    id: 1,
+    user_id: 1,
+    name: "Sam",
+    text: "This is a message"
+}
+
+messageToDOM(messages)
+
 // //Sign Up Component
     let signUpComponent =
     `<fieldset>
@@ -24,5 +36,6 @@ document.querySelector("#loginContainer").innerHTML = loginComponent
 
 let loginBTN = document.querySelector("#loginBTN")
 
-loginBTN.addEventListener("click", () => {
-})
+// loginBTN.addEventListener("click", () => {
+// })
+
