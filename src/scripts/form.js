@@ -1,6 +1,6 @@
+let bodyBlackout = document.querySelector(".bodyBlackout");
+let formBtns = document.querySelectorAll(".modalBtn");
 function bringModalForm() {
-  let formBtns = document.querySelectorAll(".modalBtn");
-  let bodyBlackout = document.querySelector(".bodyBlackout");
   formBtns.forEach(btn => {
     btn.addEventListener("click", () => {
       let { modalBtn } = btn.dataset;
@@ -24,7 +24,4 @@ function dismissModalForm() {
   });
 }
 
-function saveArtFormData() {
-    
-}
-
+export { bringModalForm, dismissModalForm };
