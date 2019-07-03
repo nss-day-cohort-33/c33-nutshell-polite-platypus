@@ -1,4 +1,4 @@
-import {bringModalForm, dismissModalForm} from "./form.js";
+import {bringModalForm, handleArtModal} from "./form.js";
 
 let signUpComponent = `<fieldset>
     <label>Name</label>
@@ -25,4 +25,4 @@ document.querySelector("#loginContainer").innerHTML = loginComponent;
 // loginBTN.addEventListener("click", () => {});
 
 bringModalForm()
-dismissModalForm()
+handleArtModal()
