@@ -17,11 +17,11 @@ function bringModalForm() {
   });
 }
 
+let artDate = document.querySelector("#artDate");
+let artSyn = document.querySelector("#artSynopsis");
+let artTitle = document.querySelector("#artTitle");
+let artLink = document.querySelector("#artLink");
 function handleArtModal() {
-  let artDate = document.querySelector("#artDate");
-  let artSyn = document.querySelector("#artSynopsis");
-  let artTitle = document.querySelector("#artTitle");
-  let artLink = document.querySelector("#artLink");
   submitBtns.forEach(btn => {
     // console.log(btn.parentElement.id);
     if (btn.parentElement.id === "articleModal") {
@@ -40,20 +40,22 @@ function handleArtModal() {
             date: artDate.value
           };
           saveArticle(capturedArtFormData);
-          artDate.value = "";
-          artLink.value = "";
-          artSyn.value = "";
-          artTitle.value = "";
+          emptyArtInputs()
           dismissModalForm(btn);
         }
       });
     }
   });
 }
-
-function dismissModalForm(thing) {
+function emptyArtInputs() {
+  artDate.value = "";
+  artLink.value = "";
+  artSyn.value = "";
+  artTitle.value = "";
+}
+function dismissModalForm() {
   bodyBlackout.classList.remove("blackedOut");
-  thing.parentNode.classList.remove("visible");
+  document.querySelector("#articleModal").classList.remove("visible");
 }
 
-export { bringModalForm, handleArtModal, dismissModalForm };
+export { bringModalForm, handleArtModal, dismissModalForm, emptyArtInputs };

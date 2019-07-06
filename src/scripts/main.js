@@ -38,7 +38,7 @@ function taskToDOM(passingTask) {
 
 taskToDOM(tasks);
 import { messageToDOM } from "./MessageDOMComponent";
-import { bringModalForm, handleArtModal, dismissModalForm } from "./form.js";
+import { bringModalForm, handleArtModal, dismissModalForm, emptyArtInputs } from "./form.js";
 import { getArticles } from "./api";
 import {renderArticles, bringAllArticles, goHome} from "./domStuff"
 const messages = {
@@ -77,8 +77,10 @@ document.querySelector("#loginContainer").innerHTML = loginComponent;
 
 bringModalForm();
 handleArtModal();
-// document.querySelector(".cancelBtn").addEventListener("click", () => {
-//   dismissModalForm();
-// });
+document.querySelector("#ArtCancelBtn").addEventListener("click", () => {
+  dismissModalForm();
+  emptyArtInputs()
+});
 bringAllArticles()
 goHome()
+

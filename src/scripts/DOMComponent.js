@@ -4,7 +4,7 @@ function makeArtComp(art) {
   // getArticles()
   //   .then(article => article.json())
   //   .then(art => {
-      return `
+  return `
         <div class="artCard" id="artCard--${art.id}">
          <h1>${art.title}</h1>
          <p>${art.synopsis}</p>
@@ -15,7 +15,7 @@ function makeArtComp(art) {
          
         </div>
         `;
-    // });
+  // });
 }
 
-export {makeArtComp}
+export { makeArtComp };
