@@ -37,8 +37,12 @@ function taskToDOM(passingTask) {
 }
 
 taskToDOM(tasks);
-import {messageToDOM} from "./MessageDOMComponent"
+
 import {bringModalForm, handleArtModal} from "./form.js";
+
+//Message stuff
+import {messageToDOM} from "./MessageDOMComponent"
+import { getMessages } from "./messageAPI";
 const messages =
     {
     id: 1,
@@ -48,6 +52,7 @@ const messages =
 }
 
 messageToDOM(messages)
+getMessages()
 
 // //Sign Up Component
 let signUpComponent = `<fieldset>

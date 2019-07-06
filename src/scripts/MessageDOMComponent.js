@@ -1,3 +1,5 @@
+import { getMessages } from "./messageAPI";
+
 const messages =
     {
     id: 1,
@@ -35,5 +37,7 @@ document.querySelector("#sendMessage").addEventListener( "click", () => {
     console.log("clicked")
 }
 )
+
+messageToDOM(getMessages)
 
 export {messageToDOM}
