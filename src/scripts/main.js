@@ -1,14 +1,26 @@
-import {messageToDOM} from "./MessageDOMComponent"
-import {bringModalForm, handleArtModal} from "./form.js";
-const messages =
-    {
-    id: 1,
-    user_id: 1,
-    name: "Sam",
-    text: "This is a message"
-}
+console.log(
+  "Your Webpack application is set up and ready to go. Please start writing code."
+);
 
-messageToDOM(messages)
+
+function taskHTML(fakeName) {
+  console.log(fakeName);
+  console.log(fakeName.name);
+
+
+
+import { messageToDOM } from "./MessageDOMComponent";
+import { bringModalForm, handleArtModal, dismissModalForm } from "./form.js";
+import { getArticles } from "./api";
+import {renderArticles, bringAllArticles, goHome} from "./domStuff"
+const messages = {
+  id: 1,
+  user_id: 1,
+  name: "Sam",
+  text: "This is a message"
+};
+
+messageToDOM(messages);
 
 // //Sign Up Component
 let signUpComponent = `<fieldset>
@@ -35,5 +47,10 @@ document.querySelector("#loginContainer").innerHTML = loginComponent;
 
 // loginBTN.addEventListener("click", () => {});
 
-bringModalForm()
-handleArtModal()
+bringModalForm();
+handleArtModal();
+// document.querySelector(".cancelBtn").addEventListener("click", () => {
+//   dismissModalForm();
+// });
+bringAllArticles()
+goHome()
