@@ -1,3 +1,5 @@
+import { saveArticle } from "./api.js";
+
 let bodyBlackout = document.querySelector(".bodyBlackout");
 let formBtns = document.querySelectorAll(".modalBtn");
 let submitBtns = document.querySelectorAll(".submitBtn");
@@ -24,7 +26,6 @@ function handleArtModal() {
     // console.log(btn.parentElement.id);
     if (btn.parentElement.id === "articleModal") {
       btn.addEventListener("click", () => {
-        // console.log("working");
         if (
           artTitle.value === "" ||
           artSyn.value === "" ||
@@ -38,7 +39,7 @@ function handleArtModal() {
             link: artLink.value,
             date: artDate.value
           };
-          console.log(capturedArtFormData);
+          saveArticle(capturedArtFormData);
           artDate.value = "";
           artLink.value = "";
           artSyn.value = "";
@@ -55,4 +56,4 @@ function dismissModalForm(thing) {
   thing.parentNode.classList.remove("visible");
 }
 
-export { bringModalForm, handleArtModal };
+export { bringModalForm, handleArtModal, dismissModalForm };

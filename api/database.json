@@ -20,5 +20,64 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "articles": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "title": "varchar",
+      "synopsis": "varchar",
+      "link": "varchar",
+      "date": "date"
+    },
+    {
+      "title": "akhf jak",
+      "synopsis": "hgjfalhgj",
+      "link": "hfjsklgh",
+      "date": "2019-07-17",
+      "id": 2
+    },
+    {
+      "title": "jgfka;",
+      "synopsis": "hgjkshgk",
+      "link": "hjgksljk",
+      "date": "2019-07-09",
+      "id": 3
+    },
+    {
+      "title": "dsl",
+      "synopsis": "hudgkl",
+      "link": "hgkjld",
+      "date": "2019-07-23",
+      "id": 4
+    },
+    {
+      "title": "hgjdfsklhg",
+      "synopsis": "ghjdl",
+      "link": "hgjksdl",
+      "date": "2019-07-23",
+      "id": 5
+    },
+    {
+      "title": "hgjslgh",
+      "synopsis": "hgjdljg",
+      "link": "ghjdl",
+      "date": "2019-07-16",
+      "id": 6
+    },
+    {
+      "title": "gjadfkl;",
+      "synopsis": "ghsjkl",
+      "link": "ghsjkl",
+      "date": "2019-07-12",
+      "id": 7
+    },
+    {
+      "title": "hgjdhjgk",
+      "synopsis": "hjgd;",
+      "link": "gdk",
+      "date": "2019-07-16",
+      "id": 8
+    }
+  ]
 }
