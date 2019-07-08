@@ -1,0 +1,5 @@
+function makeEventEntryComponent() {
+    return `
+    
+    `
+}

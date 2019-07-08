@@ -1,13 +1,5 @@
-#sectionComp {
-    display: flex;
-    border: 1px solid black
-}
-
-.hidden {
-    display: none
-}
-
-#logInContainer {
-    display: flex;
-    flex-direction: row;
+button#signInLink {
+    background: none;
+    border: none;
+    cursor: pointer;
 }
