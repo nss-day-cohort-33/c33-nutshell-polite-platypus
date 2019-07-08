@@ -6,10 +6,15 @@ function renderArticles(wrong) {
   for (let i = 0; i < array.length; i++) {
     document.querySelector("#container").innerHTML += makeArtComp(array[i]);
   }
+  // if(array[i] === 1) {
+  //   console.log(array[i])
+  // }
   makeDeleteBtnsWrk();
 }
 function bringAllArticles() {
-  // console.log("bringing");
+  console.log("brought");
+  // document.querySelector("artOne").classList.add("activated")
+  // console.log(document.querySelector("artOne").classlist)
   getArticles().then(articles => {
     renderArticles(articles);
   });
@@ -19,6 +24,7 @@ articlesBtn.addEventListener("click", () => {
   // console.log("brought'n");
   bringAllArticles();
   articlesBtn.setAttribute("disabled", "");
+  // console.log(articlesBtn)
 });
 
 function goHome() {
@@ -45,4 +51,4 @@ function makeDeleteBtnsWrk() {
     });
   }
 }
-export { bringAllArticles, goHome };
+export { bringAllArticles, goHome, articlesBtn };

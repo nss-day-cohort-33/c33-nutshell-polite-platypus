@@ -1,5 +1,5 @@
 import { saveArticle } from "./api.js";
-import { bringAllArticles } from "./domStuff.js";
+import { bringAllArticles, articlesBtn } from "./domStuff.js";
 
 let bodyBlackout = document.querySelector(".bodyBlackout");
 let formBtns = document.querySelectorAll(".modalBtn");
@@ -10,9 +10,9 @@ function bringModalForm() {
       let { modalBtn } = btn.dataset;
       // console.log("dataset", btn.dataset);
       // console.log("btn", btn);
-      let modalWin = document.querySelector(`[data-formDes="${modalBtn}"]`);
       // console.log(modalWin.children);
-      modalWin.children[1].focus()
+      let modalWin = document.querySelector(`[data-formDes="${modalBtn}"]`);
+      modalWin.children[1].focus();
       modalWin.classList.add("visible");
       bodyBlackout.classList.add("blackedOut");
     });
@@ -33,7 +33,6 @@ function handleArtModal() {
           artSyn.value === "" ||
           artDate.value === ""
         ) {
-          artTitle.focus()
           alert("Title, Synopsis, and Date required");
         } else {
           let capturedArtFormData = {
@@ -43,11 +42,7 @@ function handleArtModal() {
             date: artDate.value
           };
           saveArticle(capturedArtFormData).then(() => {
-            if (
-              document
-                .querySelector("#container")
-                .innerHTML.includes(artComponent)
-            ) {
+            if (articlesBtn.hasAttribute("disabled")) {
               document.querySelector("#container").innerHTML = "";
               bringAllArticles();
             }
