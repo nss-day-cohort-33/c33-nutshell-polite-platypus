@@ -21,6 +21,70 @@
   "profile": {
     "name": "typicode"
   },
+  "messages": [
+    {
+      "user_id": 1,
+      "name": "Sam",
+      "text": "This is a message.",
+      "date": "2019-07-07",
+      "id": 1
+    },
+    {
+      "user_id": 2,
+      "name": "Thomas",
+      "text": "This is also a message.",
+      "date": "2019-07-07",
+      "id": 2
+    },
+    {
+      "name": "frodo",
+      "text": "fddd",
+      "date": "2019-07-07",
+      "id": 3
+    },
+    {
+      "name": "Charles",
+      "text": "ss",
+      "date": "2019-07-07",
+      "id": 4
+    },
+    {
+      "name": "Bob",
+      "text": "hhh",
+      "date": "2019-07-07",
+      "id": 5
+    },
+    {
+      "name": "Sam",
+      "text": "hahahaha",
+      "date": "2019-07-08",
+      "id": 6
+    },
+    {
+      "name": "bob",
+      "text": "aa",
+      "date": "2019-07-08",
+      "id": 7
+    },
+    {
+      "name": "saa",
+      "text": "ssss",
+      "date": "2019-07-08",
+      "id": 8
+    },
+    {
+      "name": "sssss",
+      "text": "hhhhh",
+      "date": "2019-07-09",
+      "id": 9
+    },
+    {
+      "name": "Berkeley",
+      "text": "lalal",
+      "date": "2019-07-09",
+      "id": 10
+    }
+  ],
   "articles": [
     {
       "id": 1,
