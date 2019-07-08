@@ -12,8 +12,22 @@ function saveArticle(article) {
 function getArticles() {
   return fetch("http://localhost:8088/articles").then(articles =>
     articles.json()
-  )
+  );
 }
 
+function getOneArticle(num) {
+  return fetch(`http://localhost:8088/articles/${num}`).then(article =>
+    article.json()
+  );
+}
 
-export { saveArticle, getArticles };
+function deleteArticle(num) {
+  return fetch(`http://localhost:8088/articles/${num}`, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  }).then(res => res.json());
+}
+
+export { saveArticle, getArticles, getOneArticle, deleteArticle };

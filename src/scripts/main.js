@@ -40,7 +40,7 @@ taskToDOM(tasks);
 import { messageToDOM } from "./MessageDOMComponent";
 import { bringModalForm, handleArtModal, dismissModalForm, emptyArtInputs } from "./form.js";
 import { getArticles } from "./api";
-import {renderArticles, bringAllArticles, goHome} from "./domStuff"
+import {renderArticles, bringAllArticles, goHome, makeDeleteBtnsWrk} from "./domStuff"
 const messages = {
   id: 1,
   user_id: 1,
@@ -81,6 +81,6 @@ document.querySelector("#ArtCancelBtn").addEventListener("click", () => {
   dismissModalForm();
   emptyArtInputs()
 });
-bringAllArticles()
+// bringAllArticles()
 goHome()
 
