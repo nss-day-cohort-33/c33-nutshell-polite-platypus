@@ -85,16 +85,10 @@
       "id": 10
     },
     {
-      "name": "someones name",
-      "text": "hahaha",
-      "date": "2019-07-08",
+      "name": "berk",
+      "text": "lee",
+      "date": "2019-07-17",
       "id": 11
-    },
-    {
-      "name": "aaa",
-      "text": "ssss",
-      "date": "2019-07-09",
-      "id": 12
     }
   ],
   "articles": [
@@ -108,122 +102,24 @@
     },
     {
       "title": "two",
-      "synopsis": "two",
+      "synopsis": "hjgskl",
       "link": "",
       "date": "2019-07-18",
       "id": 2
     },
     {
       "title": "three",
-      "synopsis": "yhree",
-      "link": "",
-      "date": "2019-07-17",
+      "synopsis": "jkl;",
+      "link": "jkl;",
+      "date": "2019-07-13",
       "id": 3
     },
     {
-      "title": "four",
-      "synopsis": "four",
-      "link": "",
+      "title": "four ",
+      "synopsis": "jkl;",
+      "link": "jkl;",
       "date": "2019-07-11",
       "id": 4
-    },
-    {
-      "title": "five",
-      "synopsis": "five",
-      "link": "",
-      "date": "2019-07-18",
-      "id": 5
-    },
-    {
-      "title": "six",
-      "synopsis": "wix",
-      "link": "",
-      "date": "2019-07-24",
-      "id": 6
-    },
-    {
-      "title": "seven",
-      "synopsis": "seven",
-      "link": "",
-      "date": "2019-07-18",
-      "id": 7
-    },
-    {
-      "title": "eight",
-      "synopsis": "eight",
-      "link": "",
-      "date": "2019-07-25",
-      "id": 8
-    },
-    {
-      "title": "nine",
-      "synopsis": "nine",
-      "link": "",
-      "date": "2019-07-15",
-      "id": 9
-    },
-    {
-      "title": "tne",
-      "synopsis": "ten",
-      "link": "",
-      "date": "2019-07-16",
-      "id": 10
-    },
-    {
-      "title": "elven",
-      "synopsis": "eleven",
-      "link": "",
-      "date": "2019-07-18",
-      "id": 11
-    },
-    {
-      "title": "twelve",
-      "synopsis": "twelve",
-      "link": "",
-      "date": "2019-07-10",
-      "id": 12
-    },
-    {
-      "title": "thirteen",
-      "synopsis": "thirteen",
-      "link": "",
-      "date": "2019-07-12",
-      "id": 13
-    },
-    {
-      "title": "fourteenf",
-      "synopsis": "fourteen",
-      "link": "",
-      "date": "2019-07-18",
-      "id": 14
-    },
-    {
-      "title": "fifteen",
-      "synopsis": "fifteen",
-      "link": "",
-      "date": "2019-07-18",
-      "id": 15
-    },
-    {
-      "title": "sisteen",
-      "synopsis": "sisteen",
-      "link": "",
-      "date": "2019-07-12",
-      "id": 16
-    },
-    {
-      "title": "seventeen",
-      "synopsis": "seventeen",
-      "link": "",
-      "date": "2019-07-18",
-      "id": 17
-    },
-    {
-      "title": "eighteen",
-      "synopsis": "eighteen",
-      "link": "",
-      "date": "2019-07-18",
-      "id": 18
     }
   ],
   "events": [
@@ -238,6 +134,32 @@
       "name": "Fireworks",
       "date": "2019-07-04",
       "location": "NSS"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "user_name": "Thomas_Greene",
+      "email": "email1",
+      "password": "password1"
+    },
+    {
+      "id": 2,
+      "user_name": "Sam_Birky",
+      "email": "email2",
+      "password": "password2"
+    },
+    {
+      "id": 3,
+      "user_name": "Berkeley_Platte",
+      "email": "email3",
+      "password": "password3"
+    },
+    {
+      "id": 4,
+      "user_name": "Blake_Davis",
+      "email": "email4",
+      "password": "password4"
     }
   ]
 }

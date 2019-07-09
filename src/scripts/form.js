@@ -7,8 +7,8 @@ let submitBtns = document.querySelectorAll(".submitBtn");
 function bringModalForm() {
   formBtns.forEach(btn => {
     btn.addEventListener("click", () => {
+      console.log("dataset", btn.dataset);
       let { modalBtn } = btn.dataset;
-      // console.log("dataset", btn.dataset);
       // console.log("btn", btn);
       // console.log(modalWin.children);
       let modalWin = document.querySelector(`[data-formDes="${modalBtn}"]`);
