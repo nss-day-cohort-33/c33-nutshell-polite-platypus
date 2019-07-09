@@ -79,5 +79,31 @@
       "date": "2019-07-16",
       "id": 8
     }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Event",
+      "date": "2019-07-08",
+      "location": "NSS"
+    },
+    {
+      "id": 2,
+      "name": "Test",
+      "date": "2019-07-07",
+      "location": "Earth"
+    },
+    {
+      "id": 3,
+      "name": "HELP",
+      "date": "2019-07-06",
+      "location": "na"
+    },
+    {
+      "id": 4,
+      "name": "Fireworks",
+      "date": "2019-07-04",
+      "location": "NSS"
+    }
   ]
 }
