@@ -19,6 +19,7 @@ function printEvents( arr) {
     for(let i = 0; i < arr.length; i++) {
         document.querySelector("#eventContainer").innerHTML += makeEventComponent(arr[i])
     }
+    delEntry()
 }
 
 function printEventsToDom() {
@@ -29,4 +30,26 @@ function printEventsToDom() {
     })
 }
 
+function deleteEventEntry(id) {
+    return fetch(`http://localhost:8088/events/${id}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+    .then( data => data.json())
+}
+
+function delEntry() {
+    let deleteBtnArr = document.querySelectorAll(".eventDeleteBtn")
+    deleteBtnArr.forEach(deleteBtn => {
+        deleteBtn.addEventListener("click", () => {
+            console.log("is this delete?")
+            let btnID = event.target.id.split("-")[1]
+            console.log(btnID)
+            deleteEventEntry(btnID)
+            printEventsToDom()
+        })
+    })
+}
 export {printEventsToDom}

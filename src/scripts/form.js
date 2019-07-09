@@ -1,4 +1,5 @@
 import { saveArticle } from "./api.js";
+import { bringAllArticles, articlesBtn } from "./domStuff.js";
 
 let bodyBlackout = document.querySelector(".bodyBlackout");
 let formBtns = document.querySelectorAll(".modalBtn");
@@ -9,19 +10,20 @@ function bringModalForm() {
       let { modalBtn } = btn.dataset;
       // console.log("dataset", btn.dataset);
       // console.log("btn", btn);
+      // console.log(modalWin.children);
       let modalWin = document.querySelector(`[data-formDes="${modalBtn}"]`);
-      // console.log(modalWin);
+      modalWin.children[1].focus();
       modalWin.classList.add("visible");
       bodyBlackout.classList.add("blackedOut");
     });
   });
 }
 
+let artDate = document.querySelector("#artDate");
+let artSyn = document.querySelector("#artSynopsis");
+let artTitle = document.querySelector("#artTitle");
+let artLink = document.querySelector("#artLink");
 function handleArtModal() {
-  let artDate = document.querySelector("#artDate");
-  let artSyn = document.querySelector("#artSynopsis");
-  let artTitle = document.querySelector("#artTitle");
-  let artLink = document.querySelector("#artLink");
   submitBtns.forEach(btn => {
     // console.log(btn.parentElement.id);
     if (btn.parentElement.id === "articleModal") {
@@ -39,21 +41,28 @@ function handleArtModal() {
             link: artLink.value,
             date: artDate.value
           };
-          saveArticle(capturedArtFormData);
-          artDate.value = "";
-          artLink.value = "";
-          artSyn.value = "";
-          artTitle.value = "";
+          saveArticle(capturedArtFormData).then(() => {
+            if (articlesBtn.hasAttribute("disabled")) {
+              document.querySelector("#container").innerHTML = "";
+              bringAllArticles();
+            }
+          });
+          emptyArtInputs();
           dismissModalForm(btn);
         }
       });
     }
   });
 }
-
-function dismissModalForm(thing) {
+function emptyArtInputs() {
+  artDate.value = "";
+  artLink.value = "";
+  artSyn.value = "";
+  artTitle.value = "";
+}
+function dismissModalForm() {
   bodyBlackout.classList.remove("blackedOut");
-  thing.parentNode.classList.remove("visible");
+  document.querySelector("#articleModal").classList.remove("visible");
 }
 
-export { bringModalForm, handleArtModal, dismissModalForm };
+export { bringModalForm, handleArtModal, dismissModalForm, emptyArtInputs };

@@ -45,10 +45,10 @@ function taskToDOM(passingTask) {
 
 taskToDOM(tasks);
 import { messageToDOM } from "./MessageDOMComponent";
-import { bringModalForm, handleArtModal, dismissModalForm } from "./form.js";
+import { bringAllMessages } from "./messageDOMStuff";
+import { bringModalForm, handleArtModal, dismissModalForm, emptyArtInputs } from "./form.js";
 import { getArticles } from "./api";
-import {renderArticles, bringAllArticles, goHome} from "./domStuff"
-// import { printEventsToDom } from "./event";
+import {renderArticles, bringAllArticles, goHome, makeDeleteBtnsWrk} from "./domStuff"
 const messages = {
   id: 1,
   user_id: 1,
@@ -56,7 +56,9 @@ const messages = {
   text: "This is a message"
 };
 
-messageToDOM(messages);
+// messageToDOM(messages)
+bringAllMessages()
+// handleMessageModal()
 
 // //Sign Up Component
 // let signUpComponent = `<fieldset>
@@ -85,8 +87,10 @@ messageToDOM(messages);
 
 bringModalForm();
 handleArtModal();
-// document.querySelector(".cancelBtn").addEventListener("click", () => {
-//   dismissModalForm();
-// });
-bringAllArticles()
+document.querySelector("#ArtCancelBtn").addEventListener("click", () => {
+  dismissModalForm();
+  emptyArtInputs()
+});
+// bringAllArticles()
 goHome()
+
