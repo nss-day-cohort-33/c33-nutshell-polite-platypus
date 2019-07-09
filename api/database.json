@@ -102,45 +102,37 @@
     },
     {
       "title": "two",
-      "synopsis": "two",
+      "synopsis": "hjgskl",
       "link": "",
       "date": "2019-07-18",
       "id": 2
+    }
+  ],
+  "events": [],
+  "users": [
+    {
+      "id": 1,
+      "user_name": "Thomas_Greene",
+      "email": "email1",
+      "password": "password1"
     },
     {
-      "title": "three",
-      "synopsis": "yhree",
-      "link": "",
-      "date": "2019-07-17",
-      "id": 3
+      "id": 2,
+      "user_name": "Sam_Birky",
+      "email": "email2",
+      "password": "password2"
     },
     {
-      "title": "four",
-      "synopsis": "four",
-      "link": "",
-      "date": "2019-07-11",
-      "id": 4
+      "id": 3,
+      "user_name": "Berkeley_Platte",
+      "email": "email3",
+      "password": "password3"
     },
     {
-      "title": "five",
-      "synopsis": "five",
-      "link": "",
-      "date": "2019-07-18",
-      "id": 5
-    },
-    {
-      "title": "six",
-      "synopsis": "wix",
-      "link": "",
-      "date": "2019-07-24",
-      "id": 6
-    },
-    {
-      "title": "seven",
-      "synopsis": "seven",
-      "link": "",
-      "date": "2019-07-18",
-      "id": 7
+      "id": 4,
+      "user_name": "Blake_Davis",
+      "email": "email4",
+      "password": "password4"
     }
   ]
 }

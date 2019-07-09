@@ -11,79 +11,79 @@
   <body>
     <header>Welcome to Nutshell</header>
 
-    <div id="loginContainer"></div>
-    <div id="taskContainer"></div>
+    <button id="signupLoginBtn">Click Here to Register/Login</button>
 
-    <div id="messageContainer"></div>
+    <div id="loginForm"></div>
 
-    <div id="loginContainer"></div>
+    <div id="homePage" hidden>
+      <div class="bodyBlackout"></div>
 
-    <div class="bodyBlackout"></div>
+      <button type="button" class="modalBtn" data-modal-btn="one">
+        Create Article
+      </button>
 
-    <button type="button" class="modalBtn" data-modal-btn="one">
-      Create Article
-    </button>
+      <button type="button" class="modalBtn" data-modal-btn="two">
+        Create Event
+      </button>
 
-    <button type="button" class="modalBtn" data-modal-btn="two">
-      Create Event
-    </button>
+      <button type="button" class="modalBtn" data-modal-btn="three">
+        Create Message
+      </button>
 
-    <button type="button" class="modalBtn" data-modal-btn="three">
-      Create Message
-    </button>
+      <button type="button" class="modalBtn" data-modal-btn="four">
+        Create Task
+      </button>
 
-    <button type="button" class="modalBtn" data-modal-btn="four">
-      Create Task
-    </button>
+      <button type="button" id="testBtn">Articles</button>
+      <button type="button" id="messageBtn">Messages</button>
+      <button type="button" id="testBtn2">Home</button>
+      <button type="button" id="eventPageBtn">Events</button>
 
-    <button type="button" id="testBtn">Articles</button>
-    <button type="button" id="messageBtn">Messages</button>
-    <button type="button" id="testBtn2">Home</button>
+      <article id="container"></article>
 
-    <article id="container"></article>
+      <div class="modalForm column" data-formDes="one" id="articleModal">
+        <label>Title</label>
+        <input type="text" id="artTitle" />
+        <label>Synopsis</label>
+        <input type="text" id="artSynopsis" />
+        <label>Link</label>
+        <input type="text" id="artLink" />
+        <label>Date</label>
+        <input type="date" id="artDate" />
+        <!-- <div class="buttonDiv"> -->
+        <button class="submitBtn">Submit</button>
+        <button id="ArtCancelBtn">Cancel</button>
+        <!-- </div> -->
+        <!-- <input type="hidden" id="artOne" value="" /> -->
+      </div>
 
-    <div class="modalForm column" data-formDes="one" id="articleModal">
-      <label>Title</label>
-      <input type="text" id="artTitle" />
-      <label>Synopsis</label>
-      <input type="text" id="artSynopsis" />
-      <label>Link</label>
-      <input type="text" id="artLink" />
-      <label>Date</label>
-      <input type="date" id="artDate" />
-      <!-- <div class="buttonDiv"> -->
-      <button class="submitBtn">Submit</button>
-      <button id="ArtCancelBtn">Cancel</button>
-      <!-- </div> -->
-      <!-- <input type="hidden" id="artOne" value="" /> -->
-    </div>
+      <div class="modalForm column" data-formDes="two" id="eventModal">
+        <label>Name</label>
+        <input type="text" id="eventName" />
+        <label>Location</label>
+        <input type="text" id="location" />
+        <label>Date</label>
+        <input type="date" id="eventDate" />
+        <button class="submitBtn">Submit</button>
+      </div>
 
-    <div class="modalForm column" data-formDes="two" id="eventModal">
-      <label>Name</label>
-      <input type="text" id="eventName" />
-      <label>Location</label>
-      <input type="text" id="location" />
-      <label>Date</label>
-      <input type="date" id="eventDate" />
-      <button class="submitBtn">Submit</button>
-    </div>
+      <div class="modalForm column" data-formDes="three" id="messageModal">
+        <label>Name</label>
+        <input type="text" id="messageName" />
+        <label>Message</label>
+        <input type="text" id="message" />
+        <label>Date</label>
+        <input type="date" id="messageDate" />
+        <button class="submitBtn">Submit</button>
+      </div>
 
-    <div class="modalForm column" data-formDes="three" id="messageModal">
-      <label>Name</label>
-      <input type="text" id="messageName">
-      <label>Message</label>
-      <input type="text" id="message" />
-      <label>Date</label>
-      <input type="date" id="messageDate" />
-      <button class="submitBtn">Submit</button>
-    </div>
-
-    <div class="modalForm column" data-formDes="four" id="taskModal">
-      <label>Task</label>
-      <input type="text" id="task" />
-      <label>Date</label>
-      <input type="date" id="taskDate" />
-      <button class="submitBtn">Submit</button>
+      <div class="modalForm column" data-formDes="four" id="taskModal">
+        <label>Task</label>
+        <input type="text" id="task" />
+        <label>Date</label>
+        <input type="date" id="taskDate" />
+        <button class="submitBtn">Submit</button>
+      </div>
     </div>
   </body>
 </html>

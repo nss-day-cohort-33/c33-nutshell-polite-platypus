@@ -1,3 +1,25 @@
+import { loginSignupToDom, setUser } from "./login.js";
+import { printEventsToDom } from "./event.js";
+import { getUsers } from "./api.js";
+import { messageToDOM } from "./MessageDOMComponent";
+import { bringAllMessages } from "./messageDOMStuff";
+import {
+  bringModalForm,
+  handleArtModal,
+  dismissModalForm,
+  emptyArtInputs
+} from "./form.js";
+import { getArticles } from "./api";
+import {
+  renderArticles,
+  bringAllArticles,
+  goHome,
+  makeDeleteBtnsWrk
+} from "./domStuff";
+
+loginSignupToDom();
+printEventsToDom();
+
 console.log(
   "Your Webpack application is set up and ready to go. Please start writing code."
 );
@@ -31,17 +53,13 @@ function taskHTML(fakeName) {
         `;
 }
 
-function taskToDOM(passingTask) {
-  taskPage.innerHTML = "";
-  taskPage.innerHTML += taskHTML(passingTask);
-}
+// function taskToDOM(passingTask) {
+//   taskPage.innerHTML = "";
+//   taskPage.innerHTML += taskHTML(passingTask);
+// }
 
-taskToDOM(tasks);
-import { messageToDOM } from "./MessageDOMComponent";
-import { bringAllMessages } from "./messageDOMStuff";
-import { bringModalForm, handleArtModal, dismissModalForm, emptyArtInputs } from "./form.js";
-import { getArticles } from "./api";
-import {renderArticles, bringAllArticles, goHome, makeDeleteBtnsWrk} from "./domStuff"
+// taskToDOM(tasks);
+
 const messages = {
   id: 1,
   user_id: 1,
@@ -50,7 +68,7 @@ const messages = {
 };
 
 // messageToDOM(messages)
-bringAllMessages()
+bringAllMessages();
 // handleMessageModal()
 
 // //Sign Up Component
@@ -82,8 +100,9 @@ bringModalForm();
 handleArtModal();
 document.querySelector("#ArtCancelBtn").addEventListener("click", () => {
   dismissModalForm();
-  emptyArtInputs()
+  emptyArtInputs();
 });
 // bringAllArticles()
-goHome()
-
+goHome();
+getUsers().then(users => {
+  console.log(users)})

@@ -30,4 +30,17 @@ function deleteArticle(num) {
   }).then(res => res.json());
 }
 
-export { saveArticle, getArticles, getOneArticle, deleteArticle };
+// function getUser(resource, queryParams) {
+//   let url = `http://localhost:8088/${resource}`
+//   if (queryParams) {
+//     url += `?${queryParams}`
+//   }
+//   return fetch(url)
+//   .then( data => data.json() )
+// }
+
+function getUsers() {
+  return fetch("http://localhost:8088/users").then(users => users.json());
+}
+
+export { saveArticle, getArticles, getOneArticle, deleteArticle, getUsers };
