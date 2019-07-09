@@ -24,6 +24,7 @@ console.log(
   "Your Webpack application is set up and ready to go. Please start writing code."
 );
 
+
 const tasks = {
   id: 1,
   user_id: 1,
@@ -72,25 +73,25 @@ bringAllMessages();
 // handleMessageModal()
 
 // //Sign Up Component
-let signUpComponent = `<fieldset>
-    <label>Name</label>
-    <input type="text"/>
-    <label>Email</label>
-    <input type="text"/>
-    <label>Password</label>
-    <input type="text"/>
-    <button>Sign Up</button>
-    </fieldset>
-    `;
-let loginComponent = `<fieldset>
-    <label>Email</label>
-    <input type="text"/>
-    <label>Password</label>
-    <input type="text"/>
-    <button class="loginBTN">Login</button>
-    </fieldset>
-    `;
-document.querySelector("#loginContainer").innerHTML = loginComponent;
+// let signUpComponent = `<fieldset>
+//     <label>Name</label>
+//     <input type="text"/>
+//     <label>Email</label>
+//     <input type="text"/>
+//     <label>Password</label>
+//     <input type="text"/>
+//     <button>Sign Up</button>
+//     </fieldset>
+//     `;
+// let loginComponent = `<fieldset>
+//     <label>Email</label>
+//     <input type="text"/>
+//     <label>Password</label>
+//     <input type="password"/>
+//     <button class="loginBTN">Login</button>
+//     </fieldset>
+//     `;
+// document.querySelector("#loginContainer").innerHTML = loginComponent;
 
 // let loginBTN = document.querySelector("#loginBTN");
 
