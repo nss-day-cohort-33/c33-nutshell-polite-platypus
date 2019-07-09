@@ -12,7 +12,7 @@ function renderArticles(wrong) {
   makeDeleteBtnsWrk();
 }
 function bringAllArticles() {
-  console.log("brought");
+  // console.log("brought");
   // document.querySelector("artOne").classList.add("activated")
   // console.log(document.querySelector("artOne").classlist)
   getArticles().then(articles => {
@@ -22,6 +22,7 @@ function bringAllArticles() {
 let articlesBtn = document.querySelector("#testBtn");
 articlesBtn.addEventListener("click", () => {
   // console.log("brought'n");
+  document.querySelector("#container").innerHTML = "";
   bringAllArticles();
   articlesBtn.setAttribute("disabled", "");
   // console.log(articlesBtn)
