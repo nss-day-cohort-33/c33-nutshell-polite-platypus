@@ -22,4 +22,11 @@ function bringAllMessages() {
     })
 }
 
-export { bringAllMessages }
+let messageBtn = document.querySelector("#messageBtn");
+messageBtn.addEventListener("click", () => {
+  bringAllMessages();
+  messageBtn.setAttribute("disabled", "");
+  document.querySelector("#container").innerHTML = ""
+});
+
+export { bringAllMessages, messageBtn }

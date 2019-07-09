@@ -1,5 +1,6 @@
 import { makeArtComp } from "./DOMComponent.js";
 import { getArticles, deleteArticle } from "./api.js";
+import { messageBtn } from "./messageDOMStuff.js";
 
 function renderArticles(wrong) {
   let array = wrong.reverse();
@@ -32,6 +33,7 @@ function goHome() {
   document.querySelector("#testBtn2").addEventListener("click", () => {
     document.querySelector("#container").innerHTML = "";
     articlesBtn.removeAttribute("disabled", "");
+    messageBtn.removeAttribute("disabled", "");
   });
 }
 function makeDeleteBtnsWrk() {
