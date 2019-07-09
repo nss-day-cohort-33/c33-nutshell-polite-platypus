@@ -17,7 +17,7 @@ function makeEventComponent(event) {
 
 function printEvents( arr) {
     for(let i = 0; i < arr.length; i++) {
-        document.querySelector("#eventContainer").innerHTML += makeEventComponent(arr[i])
+        document.querySelector("#container").innerHTML += makeEventComponent(arr[i])
     }
     delEntry()
 }
