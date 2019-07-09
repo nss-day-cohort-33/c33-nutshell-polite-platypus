@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <title>Sparkle Huggie Nutshell</title>
-  </head>
 
-  <body>
-    <header>Welcome to Nutshell</header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <title>Sparkle Huggie Nutshell</title>
+</head>
 
-    <div id="loginContainer"></div>
+<body>
+  <header>Welcome to Nutshell</header>
+
+  <button id="signupLoginBtn">Click Here to Register/Login</button>
+
+  <div id="loginForm">
+  </div>
+
+  <div id="homePage" hidden>
+
     <div id="taskContainer"></div>
-
     <div id="messageContainer"></div>
-
-    <div id="loginContainer"></div>
-
+    <div id="eventContainer"></div>
+    <!-- <article id="container"></article> -->
     <div class="bodyBlackout"></div>
 
     <button type="button" class="modalBtn" data-modal-btn="one">
@@ -39,6 +44,7 @@
     <button type="button" id="testBtn">Articles</button>
     <button type="button" id="messageBtn">Messages</button>
     <button type="button" id="testBtn2">Home</button>
+    <button type="button" id="eventPageBtn">Events</button>
 
     <article id="container"></article>
 
@@ -85,5 +91,8 @@
       <input type="date" id="taskDate" />
       <button class="submitBtn">Submit</button>
     </div>
-  </body>
+  </div>
+
+</body>
+
 </html>
